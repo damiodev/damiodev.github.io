@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+  />
+  <!-- Google Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+  />
+  <!-- MDB -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+  rel="stylesheet"
+  />
+  <link 
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+  rel="stylesheet" 
+  />
+  <title>Spiral Maker</title>
+</head>
+<body>
+  <!--Main Navigation-->
+<header>
+  <!-- Jumbotron -->
+  <div class="p-3 text-center bg-white border-bottom">
+    <div class="container">
+      <div class="row gy-3 ">
+        <!-- Left elements -->
+        <div class="col-lg-2 col-sm-4 col-4">
+          <a href="/" target="" class="float-start">
+            <img src="../assets/images/logo-spiral-maker.png" height="40" />
+          </a>
+        </div>
+        <!-- Left elements -->
+
+        <!-- Center elements -->
+        <div class="order-lg-last col-lg-5 col-sm-8 col-8">
+          <div class="d-flex float-end">
+            <a href="./connexion.html" class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target=""> <i class="fas fa-user-alt m-1 me-md-2"></i><p class="d-none d-md-block mb-0">Se connecter</p> </a>
+            <a href="./mon-panier.html" class="border rounded py-1 px-3 nav-link d-flex align-items-center" target=""> <i class="fas fa-shopping-cart m-1 me-md-2"></i><p class="d-none d-md-block mb-0">Mon panier</p> </a>
+          </div>
+        </div>
+        <!-- Center elements -->
+
+        <!-- Right elements -->
+        <div class="col-lg-5 col-md-12 col-12">
+          <div class="input-group float-center">
+            <div class="input-group mb-3">
+              <input type="search" class="form-control" placeholder="Votre recherche" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <!-- Container wrapper -->
+    <div class="container justify-content-center justify-content-md-between">
+      <!-- Toggle button -->
+      <button
+              class="navbar-toggler border py-2 text-dark"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarLeftAlignExample"
+              aria-controls="navbarLeftAlignExample"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-dark" aria-current="page" href="/">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./imprimantes3d.html">Imprimantes 3D</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./packs-imprimantes3d.html">Packs imprimantes 3D</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./materiaux.html">Matériaux</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./blog.html">Blog</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+    <!-- Heading -->
+    <div class="bg-primary mb-4">
+        <div class="container py-4">
+          <h3 class="text-white mt-2">Détails du produit</h3>
+          <!-- Breadcrumb -->
+          <nav class="d-flex mb-2">
+            <h6 class="mb-0">
+              <a href="/" class="text-white-50">Accueil</a>
+              <span class="text-white-50 mx-2"> > </span>
+              <a href="./materiaux.html" class="text-white-50">Matériaux</a>
+              <span class="text-white-50 mx-2"> > </span>
+              <a href="./details-materiel.html" class="text-white">Détails du matériel</a>
+            </h6>
+          </nav>
+          <!-- Breadcrumb -->
+        </div>
+      </div>
+      <!-- Heading -->
+</header>
+
+
+  <main class="mt-4 mb-5">
+    <div class="container">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+          <!--Section: Post data-mdb-->
+          <section class="border-bottom mb-4">
+            <div class="text-center mb-5">
+              <h2>Anycubic - Wash & Cure 2.0</h2>
+            </div>
+            <div class="d-flex justify-content-center">
+                <img src="../assets/images/materiaux/mat1.webp"
+                class="img-fluid shadow-2-strong rounded-5 mb-5" alt="" />
+            </div>
+          </section>
+          <!--Section: Post data-mdb-->
+
+          <!--Section: Text-->
+          <section>
+            <h3 class="mb-4">Description</h3> 
+
+            <p>
+                Une imprimante 3D en résine a la possibilité de créer des détails impossibles à obtenir sur des imprimantes FDM. Cependant, il est bien connu que retravailler ces modèles finis peut être assez fastidieux.
+            </p>
+
+            <p>
+                Pour résoudre ce problème, l'équipe de recherche d'Anycubic a développé le successeur de Wash & Cure, avec plus de lampes UV pour un durcissement plus homogène.
+            </p>
+            
+            <p>
+                Ce produit offre une solution 2 en 1 pour tous ceux qui travaillent avec une imprimante SLA, DLP ou LCD. C'est à la fois une machine de nettoyage et un durcisseur UV !
+            </p>
+
+            <p><strong>Wash (nettoyer le modèle 3D)</strong></p>
+
+            <p>
+                Placez simplement votre modèle fini dans le récipient fourni et rempli avec le détergent, et lancez un processus de lavage pratique.
+            </p>
+
+            <p>
+                Pour les clients qui ont une imprimante Anycubic Photon ou Photon S, vous avez également accès à une autre fonctionnalité ! Vous pouvez retirer directement la plate-forme de Anycubic Photon et la placer sur la machine Wash & Cure, pour éviter autant que possible le contact avec la résine non durcie. De plus, la hauteur du support est réglable, afin que vous n'ayez pas à remplir complètement le récipient.
+            </p>
+
+            <p class="note note-light">
+              <strong>Note:</strong> Le conteneur Wash & Cure 2.0 peut être laissé fermé pendant tout le processus de nettoyage pour plus de sécurité
+            </p>
+
+            <p>
+                Une fois le processus de nettoyage terminer, vous pouvez simplement fermer le récipient et le conserver pour le prochain processus de lavage.
+            </p>
+
+            <p><strong>Cure (post-durcissement)</strong></p>
+
+            <p>
+                Après le lavage, le produit peut passer en durcissement UV. Doté de nombreuses lampes UV, il vous permet de durcir le modèle fini plus rapidement et facilement !
+            </p>
+
+            <p>
+                Une plate-forme rotative assure un traitement UV à 360° afin que votre modèle soit durci sous tous les angles.
+            </p>
+
+            <p>
+                Contrairement à son prédécesseur, le Wash & Cure 2.0 a plus de lampes UV pour permettre un durcissement plus uniforme.
+            </p>
+
+            <p><strong>Facilité d'utilisation et sécurité</strong></p>
+
+            <p>
+                Le fonctionnement très simple est rendu possible grâce au bouton rotatif et poussoir. Vous pouvez donc facilement basculer entre le mode Wash et le mode Cure. En option, vous pouvez également définir la durée pendant laquelle la machine doit laver ou durcir.
+            </p>
+
+            <p>
+                Le couvercle spécial filtre 99,95% de la lumière UV et empêche les dommages possibles dû à la lumière UV. Le produit est également équipé d'une fonction de sécurité qui éteint automatiquement les lampes UV lorsque vous retirez le couvercle.
+            </p>
+
+            <p><strong>Spécifications techniques :</strong></p>
+
+            <ul>
+              <li>Lumière UV : <strong>405 nm</strong></li>
+              <li>Dimensions maximales du modèle pour le lavage : <strong>120 x 74 x 165 mm</strong></li>
+              <li>Dimensions maximales du modèle pour le durcissement : <strong>140 Ø x 165 mm</strong></li>
+            </ul>
+          </section>
+          <!--Section: Text-->
+
+          <!--Section: Share buttons-->
+          <section class="text-center border-top border-bottom py-4 mb-4">
+            <p><strong>Partager ce produit:</strong></p>
+
+            <button type="button" class="btn btn-primary me-1" style="background-color: #3b5998;">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button type="button" class="btn btn-primary me-1" style="background-color: #55acee;">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button type="button" class="btn btn-primary me-1" style="background-color: #0082ca;">
+              <i class="fab fa-linkedin"></i>
+            </button>
+            <button type="button" class="btn btn-primary me-1">
+                <i class="fa-brands fa-tiktok"></i>
+            </button>
+          </section>
+          <!--Section: Share buttons-->
+
+          <!--Section: Author-->
+          <section class="border-bottom mb-4 pb-4">
+            <div class="row">
+              <div class="col-3">
+                <img src="../assets/images/equipe-spiral-maker.png"
+                  class="img-fluid shadow-1-strong rounded-5" alt="" />
+              </div>
+
+              <div class="col-9">
+                <p class="mb-2"><strong>L'équipe Spiral Maker</strong></p>
+                <a href="" class="text-dark"><i class="fab fa-facebook-f me-1"></i></a>
+                <a href="" class="text-dark"><i class="fab fa-twitter me-1"></i></a>
+                <a href="" class="text-dark"><i class="fab fa-linkedin me-1"></i></a>
+                <p>
+                    Découvrez la nouvelle imprimante 3D Anycube - Wash & Cure 2.0, le joyau de la technologie pour les passionnés de l'impression 3D ! Avec son design élégant et ses performances exceptionnelles, elle vous permettra de créer des objets complexes avec une précision incroyable. Simplifiez votre processus d'impression grâce à cet outil révolutionnaire dès aujourd'hui !
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--Section: Author-->
+
+          <!--Section: Comments-->
+          <section class="border-bottom mb-3">
+            <p class="text-center"><strong>Comments: 3</strong></p>
+
+            <!-- Comment -->
+            <div class="row mb-4">
+              <div class="col-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <div class="col-10">
+                <p class="mb-2"><strong>Maxime O.</strong></p>
+                <p>
+                    L'imprimante Anycube - Wash & Cure 2.0 a dépassé toutes mes attentes ! Elle est incroyablement facile à utiliser, et mes impressions 3D sont d'une qualité exceptionnelle. Le processus de nettoyage et de durcissement est un vrai jeu d'enfant. Je ne peux plus m'en passer !
+                </p>
+              </div>
+            </div>
+
+            <!-- Comment -->
+            <div class="row mb-4">
+              <div class="col-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <div class="col-10">
+                <p class="mb-2"><strong>Léonie O.</strong></p>
+                <p>
+                    J'ai été agréablement surpris par la Wash & Cure 2.0 d'Anycube. Elle m'a permis de gagner énormément de temps dans la finition de mes projets. C'est un investissement précieux pour tous les amateurs d'impression 3D sérieux.
+                </p>
+              </div>
+            </div>
+
+            <!-- Comment -->
+            <div class="row mb-4">
+              <div class="col-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <div class="col-10">
+                <p class="mb-2"><strong>Marie F.</strong></p>
+                <p>
+                    Cette imprimante 3D a vraiment révolutionné ma manière de créer des prototypes. La qualité des détails est incroyable, et le nettoyage automatisé fait gagner un temps précieux. Je recommande vivement la Anycube - Wash & Cure 2.0 à tous les passionnés d'impression 3D !
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--Section: Comments-->
+
+          <!--Section: Reply-->
+          <section>
+            <button type="submit" class="btn btn-block mb-4">
+                Afficher tous les commentaires clients
+            </button>
+            <p class="text-center"><strong>Merci de vous connecter pour pouvoir laisser un commentaire</strong></p>
+            <button type="submit" class="btn btn-primary btn-block mb-4">
+                Evaluer le produit
+            </button>
+          </section>
+          <!--Section: Reply-->
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-4 mb-4">
+          <!--Section: Sidebar-->
+          <section class="sticky-top" style="top: 20px;">
+            <!--Section: Ad-->
+            <section class="text-center border-bottom pb-4 mb-4">
+              <h5>Anycube - Wash & Cure 2.0</h5>
+                <div class="fst-italic">Post-traitement facile de vos modèles 3D imprimés en résine !</div>
+              <div class="column mb-4 mt-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i> (4.8)
+                  <div class="mt-2"><a href="#">18 évaluations client</a></div>
+              </div>
+              <h6 class="text-success">En stock</h6>
+                <div class="d-flex justify-content-center">
+                    <div class="border border-primary mt-4 w-50 mb-4">
+                        <h6 class="fw-bold mt-3">Caractéristiques et avantages</h6>
+                        <ul class="list-unstyled text-start m-4">
+                            <li><i class="fas fa-check me-2"></i>Solution 2 en 1</li>
+                            <li><i class="fas fa-check me-2"></i>Facilité d'utilisation</li>
+                            <li><i class="fas fa-check me-2"></i>Traitement 360°</li>
+                            <li><i class="fas fa-check me-2"></i>Arrêt automatique</li>
+                        </ul>
+                    </div>
+                </div>
+              <a role="button" class="btn btn-primary" href="#"
+                target="">Ajouter au panier <i class="fa-solid fa-cart-plus mx-1"></i></a>
+            </section>
+            <!--Section: Ad-->
+
+            <!--Section: Video-->
+            <section class="text-center">
+              <h5 class="mb-4">Vidéo présentation</h5>
+
+              <div class="embed-responsive embed-responsive-16by9 shadow-4-strong">
+                <iframe width="350" height="315" src="https://www.youtube.com/embed/eK10wfB9460?si=6OejL8vow82j2qCy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </section>
+            <!--Section: Video-->
+          </section>
+          <!--Section: Sidebar-->
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+  </main>
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start text-muted mt-3" style="background-color: #f5f5f5;">
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start pt-4 pb-4">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-12 col-lg-3 col-sm-12 mb-2">
+          <!-- Content -->
+          <a href="/" target="" class="">
+            <img src="../assets/images/logo-spiral-maker.png" height="35" />
+          </a>
+          <p class="mt-2 text-dark">
+            © 2023 Copyright: Spiral Maker
+          </p>
+        </div>
+        <!-- Grid column -->
+        
+        <!-- Grid column -->
+        <div class="col-12 col-sm-12 col-lg-3">
+          <!-- Links -->
+          <h6 class="text-uppercase text-dark fw-bold mb-2">Newsletter</h6>
+          <p class="text-muted">Inscrivez-vous à notre newsletter</p>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control border" placeholder="Votre email" aria-label="Email" aria-describedby="button-addon2" />
+            <button class="btn btn-light border shadow-0" type="button" id="button-addon2" data-mdb-ripple-color="dark">
+              S'inscrire
+            </button>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-6 col-sm-4 col-lg-2">
+          <!-- Links -->
+          <h6 class="text-uppercase text-dark fw-bold mb-2">
+            Nos produits
+          </h6>
+          <ul class="list-unstyled mb-4">
+            <li><a class="text-muted" href="#">Imprimantes 3D</a></li>
+            <li><a class="text-muted" href="#">Filaments PLA</a></li>
+            <li><a class="text-muted" href="#">Résines SLA</a></li>
+            <li><a class="text-muted" href="#">Scanners 3D</a></li>
+            <li><a class="text-muted" href="#">Accessoires</a></li>
+            <li><a class="text-muted" href="#">Pièces détachées</a></li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        
+        <!-- Grid column -->
+        <div class="col-6 col-sm-4 col-lg-2">
+          <!-- Links -->
+          <h6 class="text-uppercase text-dark fw-bold mb-2">
+            Nos services
+          </h6>
+          <ul class="list-unstyled mb-4">
+            <li><a class="text-muted" href="#">Extension de garantie</a></li>
+            <li><a class="text-muted" href="#">Réparation et dépannage</a></li>
+            <li><a class="text-muted" href="#">Impression de test</a></li>
+            <li><a class="text-muted" href="#">Financement</a></li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-6 col-sm-4 col-lg-2">
+          <!-- Links -->
+          <h6 class="text-uppercase text-dark fw-bold mb-2">
+            Infos
+          </h6>
+          <ul class="list-unstyled mb-4">
+            <li><a class="text-muted" href="#">Contact</a></li>
+            <li><a class="text-muted" href="#">Support technique</a></li>
+            <li><a class="text-muted" href="#">Livraison</a></li>
+            <li><a class="text-muted" href="#">Paiement</a></li>
+            <li><a class="text-muted" href="#">F.A.Q</a></li>
+            <li><a class="text-muted" href="#">À propos de nous</a></li>
+            <li><a class="text-muted" href="#">Spiral Maker recrute ! </a></li>
+            <li><a class="text-muted" href="#">Demande de partenariat</a></li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <div class="">
+    <div class="container">
+      <div class="d-flex justify-content-between py-4 border-top">
+        <!--- payment --->
+        <div>
+          <i class="fab fa-lg fa-cc-visa text-dark"></i>
+          <i class="fab fa-lg fa-cc-amex text-dark"></i>
+          <i class="fab fa-lg fa-cc-mastercard text-dark"></i>
+          <i class="fab fa-lg fa-cc-paypal text-dark"></i>
+        </div>
+        <!--- payment --->
+
+        <!--- language selector --->
+        <div class="dropdown dropup">
+          <a class="dropdown-toggle text-dark" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false"> <i class="flag-france flag m-0 me-1"></i>Français </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Dropdown">
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-france flag"></i>Français <i class="fa fa-check text-success ms-2"></i></a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-united-kingdom flag"></i>English</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-poland flag"></i>Polski</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-china flag"></i>中文</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-japan flag"></i>日本語</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-germany flag"></i>Deutsch</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-spain flag"></i>Español</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-russia flag"></i>Русский</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-portugal flag"></i>Português</a>
+            </li>
+          </ul>
+        </div>
+        <!--- language selector --->
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer -->
+
+
+  <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <!-- MDB -->
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+  ></script>
+</body>
+</html>

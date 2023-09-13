@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+  />
+  <!-- Google Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+  />
+  <!-- MDB -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+  rel="stylesheet"
+  />
+  <link 
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+  rel="stylesheet" 
+  />
+  <title>Spiral Maker</title>
+</head>
+<body>
+  <!--Main Navigation-->
+<header>
+  <!-- Jumbotron -->
+  <div class="p-3 text-center bg-white border-bottom">
+    <div class="container">
+      <div class="row gy-3 ">
+        <!-- Left elements -->
+        <div class="col-lg-2 col-sm-4 col-4">
+          <a href="/" target="" class="float-start">
+            <img src="../assets/images/logo-spiral-maker.png" height="40" />
+          </a>
+        </div>
+        <!-- Left elements -->
+
+        <!-- Center elements -->
+        <div class="order-lg-last col-lg-5 col-sm-8 col-8">
+          <div class="d-flex float-end">
+            <a href="./connexion.html" class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target=""> <i class="fas fa-user-alt m-1 me-md-2"></i><p class="d-none d-md-block mb-0">Se connecter</p> </a>
+            <a href="./mon-panier.html" class="border rounded py-1 px-3 nav-link d-flex align-items-center" target=""> <i class="fas fa-shopping-cart m-1 me-md-2"></i><p class="d-none d-md-block mb-0">Mon panier</p> </a>
+          </div>
+        </div>
+        <!-- Center elements -->
+
+        <!-- Right elements -->
+        <div class="col-lg-5 col-md-12 col-12">
+          <div class="input-group float-center">
+            <div class="input-group mb-3">
+              <input type="search" class="form-control" placeholder="Votre recherche" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <!-- Container wrapper -->
+    <div class="container justify-content-center justify-content-md-between">
+      <!-- Toggle button -->
+      <button
+              class="navbar-toggler border py-2 text-dark"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarLeftAlignExample"
+              aria-controls="navbarLeftAlignExample"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-dark" aria-current="page" href="/">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./imprimantes3d.html">Imprimantes 3D</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./packs-imprimantes3d.html">Packs imprimantes 3D</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./materiaux.html">Matériaux</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./blog.html">Blog</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+
+  <!-- Heading -->
+  <div class="bg-primary mb-4">
+    <div class="container py-4">
+      <h3 class="text-white mt-2">Imprimantes 3D</h3>
+      <!-- Breadcrumb -->
+      <nav class="d-flex mb-2">
+        <h6 class="mb-0">
+          <a href="/" class="text-white-50">Accueil</a>
+          <span class="text-white-50 mx-2"> > </span>
+          <a href="./imprimantes3d.html" class="text-white">Imprimantes 3D</a>
+        </h6>
+      </nav>
+      <!-- Breadcrumb -->
+    </div>
+  </div>
+  <!-- Heading -->
+</header>
+
+<!-- sidebar + content -->
+<section class="">
+  <div class="container">
+    <div class="row">
+      <!-- sidebar -->
+      <div class="col-lg-3">
+        <!-- Toggle button -->
+        <button
+                class="btn btn-outline-secondary mb-3 w-100 d-lg-none"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+          <span>Show filter</span>
+        </button>
+        <!-- Collapsible wrapper -->
+        <div class="collapse card d-lg-block mb-5" id="navbarSupportedContent">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                        class="accordion-button text-dark bg-light"
+                        type="button"
+                        data-mdb-toggle="collapse"
+                        data-mdb-target="#panelsStayOpen-collapseOne"
+                        aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne"
+                        >
+                  Catégories
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark">Imprimantes 3D Filaments </a></li>
+                    <li><a href="#" class="text-dark">Imprimantes 3D Résines </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                        class="accordion-button text-dark bg-light"
+                        type="button"
+                        data-mdb-toggle="collapse"
+                        data-mdb-target="#panelsStayOpen-collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseTwo"
+                        >
+                  Marques
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
+                <div class="accordion-body">
+                  <div>
+                    <!-- Checked checkbox -->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" checked />
+                      <label class="form-check-label" for="flexCheckChecked1">AnkerMake</label>
+                      <span class="badge badge-secondary float-end">0</span>
+                    </div>
+                    <!-- Checked checkbox -->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked />
+                      <label class="form-check-label" for="flexCheckChecked2">Anycubic</label>
+                      <span class="badge badge-secondary float-end">2</span>
+                    </div>
+                    <!-- Checked checkbox -->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" checked />
+                      <label class="form-check-label" for="flexCheckChecked3">Artillery</label>
+                      <span class="badge badge-secondary float-end">0</span>
+                    </div>
+                    <!-- Checked checkbox -->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4" checked />
+                      <label class="form-check-label" for="flexCheckChecked4">Creality</label>
+                      <span class="badge badge-secondary float-end">1</span>
+                    </div>
+                    <!-- Default checkbox -->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">Elegoo</label>
+                      <span class="badge badge-secondary float-end">0</span>
+                    </div>
+                    <!-- Default checkbox -->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">Flsun</label>
+                      <span class="badge badge-secondary float-end">1</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                        class="accordion-button text-dark bg-light"
+                        type="button"
+                        data-mdb-toggle="collapse"
+                        data-mdb-target="#panelsStayOpen-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree"
+                        >
+                  Prix
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree">
+                <div class="accordion-body">
+                  <div class="range">
+                    <input type="range" class="form-range" id="customRange1" />
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <p class="mb-0">
+                        Min
+                      </p>
+                      <div class="form-outline">
+                        <input type="number" id="typeNumber" class="form-control" />
+                        <label class="form-label" for="typeNumber">0 €</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <p class="mb-0">
+                        Max
+                      </p>
+                      <div class="form-outline">
+                        <input type="number" id="typeNumber" class="form-control" />
+                        <label class="form-label" for="typeNumber">2000 €</label>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-white w-100 border border-secondary">Appliquer</button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                        class="accordion-button text-dark bg-light"
+                        type="button"
+                        data-mdb-toggle="collapse"
+                        data-mdb-target="#panelsStayOpen-collapseFive"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive"
+                        >
+                  Notes des clients
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingThree">
+                <div class="accordion-body">
+                  <!-- Default checkbox -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </label>
+                  </div>
+                  <!-- Default checkbox -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-secondary"></i>
+                    </label>
+                  </div>
+                  <!-- Default checkbox -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-secondary"></i>
+                      <i class="fas fa-star text-secondary"></i>
+                    </label>
+                  </div>
+                  <!-- Default checkbox -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-secondary"></i><i class="fas fa-star text-secondary"></i>
+                      <i class="fas fa-star text-secondary"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar -->
+      <!-- content -->
+      <div class="col-lg-9">
+        <header class="d-sm-flex align-items-center border-bottom mb-4 pb-3">
+          <strong class="d-block py-2">4 Imprimantes trouvées </strong>
+          <div class="ms-auto">
+            <select class="form-select d-inline-block w-auto border pt-1">
+              <option value="0">Mise en avant</option>
+              <option value="1">Prix : Ordre croissant</option>
+              <option value="2">Prix : Ordre décroissant</option>
+              <option value="3">Moyenne des notes client</option>
+            </select>
+            <div class="btn-group shadow-0 border">
+              <a href="#" class="btn btn-light" title="List view">
+                <i class="fa fa-bars fa-lg"></i>
+              </a>
+              <a href="#" class="btn btn-light active" title="Grid view">
+                <i class="fa fa-th fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </header>
+
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-12">
+            <div class="card shadow-0 border rounded-3">
+              <div class="card-body">
+                <div class="row g-0">
+                  <div class="col-xl-3 col-md-4 d-flex justify-content-center">
+                    <div class="bg-image hover-zoom ripple rounded ripple-surface me-md-3 mb-3 mb-md-0">
+                      <img src="../assets/images/imprimantes/imprimante1-512x512.webp" class="w-100" />
+                      <a href="./details-imprimante3d.html">
+                        <div class="hover-overlay">
+                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-md-5 col-sm-7">
+                    <h5>Anycubic - Wash & Cure 2.0</h5>
+                    <div class="d-flex flex-row">
+                      <div class="text-warning mb-1 me-2">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="ms-1">
+                          4.5
+                        </span>
+                      </div>
+                      <span class="text-muted">154 commandes</span>
+                    </div>
+
+                    <p class="text mb-4 mb-md-0 me-2">
+                      Une imprimante 3D en résine a la possibilité de créer des détails impossibles à obtenir sur des imprimantes FDM. Cependant, il est bien connu que retravailler ces modèles finis peut être assez fastidieux. [...]
+                    </p>
+                  </div>
+                  <div class="col-xl-3 col-md-3 col-sm-5">
+                    <div class="d-flex flex-row align-items-center mb-1">
+                      <h4 class="mb-1 me-1">99,00 €</h4>
+                      <span class="text-danger"><s>119,99 €</s></span>
+                    </div>
+                    <h6 class="text-success">En stock</h6>
+                    <div class="mt-4">
+                      <button class="btn btn-primary shadow-0 mb-2" type="button">Ajouter au panier <i class="fa-solid fa-cart-plus mx-1"></i></button>
+                      <a href="./details-imprimante3d.html" class="btn btn-light border px-2 pt-2 icon-hover">Détails du produit</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-12">
+            <div class="card shadow-0 border rounded-3">
+              <div class="card-body">
+                <div class="row g-0">
+                  <div class="col-xl-3 col-md-4 d-flex justify-content-center">
+                    <div class="bg-image hover-zoom ripple rounded ripple-surface me-md-3 mb-3 mb-md-0">
+                      <img src="../assets/images/imprimantes/imprimante2-512x512.webp" class="w-100" />
+                      <a href="./details-imprimante3d.html">
+                        <div class="hover-overlay">
+                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-md-5 col-sm-7">
+                    <h5>Creality - Ender 3</h5>
+                    <div class="d-flex flex-row">
+                      <div class="text-warning mb-1 me-2">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="ms-1">
+                          3
+                        </span>
+                      </div>
+                      <span class="text-muted">73 commandes</span>
+                    </div>
+
+                    <p class="text mb-4 mb-md-0 me-2">
+                      D'excellentes impressions, de nombreuses options de mise à niveau et un prix abordable font de la Creality Ender 3 l'une des imprimantes 3D les plus populaires et les plus vendues au monde. [...]
+                    </p>
+                  </div>
+                  <div class="col-xl-3 col-md-3 col-sm-5">
+                    <div class="d-flex flex-row align-items-center mb-1">
+                      <h4 class="mb-1 me-1">159,00 €</h4>
+                      <span class="text-danger"><s>249,99 €</s></span>
+                    </div>
+                    <h6 class="text-warning">Reste 3 en stock</h6>
+                    <div class="mt-4">
+                      <button class="btn btn-primary shadow-0 mb-2" type="button">Ajouter au panier <i class="fa-solid fa-cart-plus mx-1"></i></button>
+                      <a href="./details-imprimante3d.html" class="btn btn-light border px-2 pt-2 icon-hover">Détails du produit</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-12">
+            <div class="card shadow-0 border rounded-3">
+              <div class="card-body">
+                <div class="row g-0">
+                  <div class="col-xl-3 col-md-4 d-flex justify-content-center">
+                    <div class="bg-image hover-zoom ripple rounded ripple-surface me-md-3 mb-3 mb-md-0">
+                      <img src="../assets/images/imprimantes/imprimante3-512x512.webp" class="w-100" />
+                      <a href="./details-imprimante3d.html">
+                        <div class="hover-overlay">
+                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-md-5 col-sm-7">
+                    <h5>Anycubic - Vyper</h5>
+                    <div class="d-flex flex-row">
+                      <div class="text-warning mb-1 me-2">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <span class="ms-1">
+                          3.5
+                        </span>
+                      </div>
+                      <span class="text-muted">910 commandes</span>
+                    </div>
+
+                    <p class="text mb-4 mb-md-0 me-2">
+                      Équipée d'une nouvelle carte mère 32 bits et d'un processeur Cortex-M3 hautes performances, la Vyper offre une puissance de calcul plus élevée et un système plus fluide. [...]
+                    </p>
+                  </div>
+                  <div class="col-xl-3 col-md-3 col-sm-5">
+                    <div class="d-flex flex-row align-items-center mb-1">
+                      <h4 class="mb-1 me-1">239,00 €</h4>
+                    </div>
+                    <h6 class="text-success">En stock</h6>
+                    <div class="mt-4">
+                      <button class="btn btn-primary shadow-0 mb-2" type="button">Ajouter au panier <i class="fa-solid fa-cart-plus mx-1"></i></button>
+                      <a href="./details-imprimante3d.html" class="btn btn-light border px-2 pt-2 icon-hover">Détails du produit</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-12">
+            <div class="card shadow-0 border rounded-3">
+              <div class="card-body">
+                <div class="row g-0">
+                  <div class="col-xl-3 col-md-4 d-flex justify-content-center">
+                    <div class="bg-image hover-zoom ripple rounded ripple-surface me-md-3 mb-3 mb-md-0">
+                      <img src="../assets/images/imprimantes/imprimante4-512x512.webp" class="w-100" />
+                      <a href="./details-imprimante3d.html">
+                        <div class="hover-overlay">
+                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-md-5 col-sm-7">
+                    <h5>Flsun - Q5</h5>
+                    <div class="d-flex flex-row">
+                      <div class="text-warning mb-1 me-2">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="ms-1">
+                          4.5
+                        </span>
+                      </div>
+                      <span class="text-muted">154 commandes</span>
+                    </div>
+
+                    <p class="text mb-4 mb-md-0 me-2">
+                      Cette imprimante Delta compacte a été développée par FLSUN sur la base de plusieurs années de développement de la technologie Delta. Sa structure est modulaire et permet une installation, une maintenance et un fonctionnement particulièrement pratiques et intuitifs. [...]
+                    </p>
+                  </div>
+                  <div class="col-xl-3 col-md-3 col-sm-5">
+                    <div class="d-flex flex-row align-items-center mb-1">
+                      <h4 class="mb-1 me-1">259,00 €</h4>
+                      <span class="text-danger"><s>289,99 €</s></span>
+                    </div>
+                    <h6 class="text-danger">Victime de son succès</h6>
+                    <div class="mt-4">
+                      <button class="btn btn-primary shadow-0 mb-2" type="button">Ajouter au panier <i class="fa-solid fa-cart-plus mx-1"></i></button>
+                      <a href="./details-imprimante3d.html" class="btn btn-light border px-2 pt-2 icon-hover">Détails du produit</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-3">
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Pagination -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start text-muted mt-3" style="background-color: #f5f5f5;">
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start pt-4 pb-4">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-12 col-lg-3 col-sm-12 mb-2">
+          <!-- Content -->
+          <a href="/" target="" class="">
+            <img src="../assets/images/logo-spiral-maker.png" height="35" />
+          </a>
+          <p class="mt-2 text-dark">
+            © 2023 Copyright: Spiral Maker
+          </p>
+        </div>
+        <!-- Grid column -->
+        
+        <!-- Grid column -->
+        <div class="col-12 col-sm-12 col-lg-3">
+          <!-- Links -->
+          <h6 class="text-uppercase text-dark fw-bold mb-2">Newsletter</h6>
+          <p class="text-muted">Inscrivez-vous à notre newsletter</p>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control border" placeholder="Votre email" aria-label="Email" aria-describedby="button-addon2" />
+            <button class="btn btn-light border shadow-0" type="button" id="button-addon2" data-mdb-ripple-color="dark">
+              S'inscrire
+            </button>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-6 col-sm-4 col-lg-2">
+          <!-- Links -->
+          <h6 class="text-uppercase text-dark fw-bold mb-2">
+            Nos produits
+          </h6>
+          <ul class="list-unstyled mb-4">
+            <li><a class="text-muted" href="./imprimantes3d.html">Imprimantes 3D</a></li>
+            <li><a class="text-muted" href="./materiaux.html">Filaments PLA</a></li>
+            <li><a class="text-muted" href="./materiaux.html">Résines SLA</a></li>
+            <li><a class="text-muted" href="./imprimantes3d.html">Scanners 3D</a></li>
+            <li><a class="text-muted" href="./materiaux.html">Accessoires</a></li>
+            <li><a class="text-muted" href="./materiaux.html">Pièces détachées</a></li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        
+        <!-- Grid column -->
+        <div class="col-6 col-sm-4 col-lg-2">
+          <!-- Links -->
+          <h6 class="text-uppercase text-dark fw-bold mb-2">
+            Nos services
+          </h6>
+          <ul class="list-unstyled mb-4">
+            <li><a class="text-muted" href="#">Extension de garantie</a></li>
+            <li><a class="text-muted" href="#">Réparation et dépannage</a></li>
+            <li><a class="text-muted" href="#">Impression de test</a></li>
+            <li><a class="text-muted" href="#">Financement</a></li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-6 col-sm-4 col-lg-2">
+          <!-- Links -->
+          <h6 class="text-uppercase text-dark fw-bold mb-2">
+            Infos
+          </h6>
+          <ul class="list-unstyled mb-4">
+            <li><a class="text-muted" href="#">Contact</a></li>
+            <li><a class="text-muted" href="#">Support technique</a></li>
+            <li><a class="text-muted" href="#">Livraison</a></li>
+            <li><a class="text-muted" href="#">Paiement</a></li>
+            <li><a class="text-muted" href="#">F.A.Q</a></li>
+            <li><a class="text-muted" href="#">À propos de nous</a></li>
+            <li><a class="text-muted" href="#">Spiral Maker recrute ! </a></li>
+            <li><a class="text-muted" href="#">Demande de partenariat</a></li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <div class="">
+    <div class="container">
+      <div class="d-flex justify-content-between py-4 border-top">
+        <!--- payment --->
+        <div>
+          <i class="fab fa-lg fa-cc-visa text-dark"></i>
+          <i class="fab fa-lg fa-cc-amex text-dark"></i>
+          <i class="fab fa-lg fa-cc-mastercard text-dark"></i>
+          <i class="fab fa-lg fa-cc-paypal text-dark"></i>
+        </div>
+        <!--- payment --->
+
+        <!--- language selector --->
+        <div class="dropdown dropup">
+          <a class="dropdown-toggle text-dark" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false"> <i class="flag-france flag m-0 me-1"></i>Français </a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Dropdown">
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-france flag"></i>Français <i class="fa fa-check text-success ms-2"></i></a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-united-kingdom flag"></i>English</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-poland flag"></i>Polski</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-china flag"></i>中文</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-japan flag"></i>日本語</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-germany flag"></i>Deutsch</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-spain flag"></i>Español</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-russia flag"></i>Русский</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-portugal flag"></i>Português</a>
+            </li>
+          </ul>
+        </div>
+        <!--- language selector --->
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer -->
+
+
+  <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <!-- MDB -->
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+  ></script>
+</body>
+</html>
